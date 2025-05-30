@@ -34,27 +34,6 @@ This repository contains implementations for the ShadowFox skill development pro
 
 ---
 
-## 🔴 Advanced Level 
-
-### Fitness Tracking App
-- **Description**: A mobile app that uses device sensors to track physical activities and custom fitness goals.
-- **Features**:
-  - Integration with sensors to monitor fitness metrics like steps or movement.
-  - Custom goal setting and real-time progress tracking.
-  - Visual analytics and insights to help users understand and improve their fitness routines.
-
----
-
-## 🚀 Getting Started
-
-To run any project:
-
-1. Navigate to the corresponding folder.
-2. Follow the setup instructions provided in the `README.md` inside each folder.
-3. Run the app on an Android emulator or a physical device.
-
----
-
 ## 🛠 Tech Stack
 
 - **Language**: Java   
