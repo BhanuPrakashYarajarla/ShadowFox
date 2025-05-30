@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Initialize ThreeTenABP here:
+        
         AndroidThreeTen.init(this);
 
         setContentView(R.layout.activity_main);
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         dateInput.setOnClickListener(v -> {
             Calendar calendar = Calendar.getInstance();
             new DatePickerDialog(this, (DatePicker view, int year, int month, int dayOfMonth) -> {
-                // month +1 because Calendar months are 0-based
+                
                 selectedDate = LocalDate.of(year, month + 1, dayOfMonth);
                 dateInput.setText(selectedDate.toString());
             }, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH)).show();
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
             Task newTask = new Task(title, selectedDate);
             taskAdapter.addTask(newTask);
 
-            // Reset inputs
+            
             taskInput.setText("");
             dateInput.setText("");
             selectedDate = null;
