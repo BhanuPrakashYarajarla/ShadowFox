@@ -31,7 +31,6 @@ public class Task implements Comparable<Task> {
 
     @Override
     public int compareTo(Task other) {
-        // Earlier due dates come first (higher priority)
         return this.dueDate.compareTo(other.dueDate);
     }
 }
