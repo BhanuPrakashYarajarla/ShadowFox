@@ -20,7 +20,7 @@ public class CalculatorActivity extends AppCompatActivity {
 
         display = findViewById(R.id.display);
 
-        // Number buttons
+        
         int[] numberButtonIds = {R.id.button_0, R.id.button_00, R.id.button_1, R.id.button_2, R.id.button_3,
                 R.id.button_4, R.id.button_5, R.id.button_6, R.id.button_7, R.id.button_8, R.id.button_9};
         for (int id : numberButtonIds) {
@@ -32,7 +32,7 @@ public class CalculatorActivity extends AppCompatActivity {
             });
         }
 
-        // Operator buttons
+        
         int[] operatorButtonIds = {R.id.button_add, R.id.button_subtract, R.id.button_multiply, R.id.button_divide};
         for (int id : operatorButtonIds) {
             findViewById(id).setOnClickListener(v -> {
@@ -45,14 +45,14 @@ public class CalculatorActivity extends AppCompatActivity {
             });
         }
 
-        // AC button
+        
         findViewById(R.id.button_ac).setOnClickListener(v -> {
             currentExpression = "";
             lastInputIsOperator = false;
             updateDisplay();
         });
 
-        // Backspace button
+        
         findViewById(R.id.button_backspace).setOnClickListener(v -> {
             if (!currentExpression.isEmpty()) {
                 currentExpression = currentExpression.substring(0, currentExpression.length() - 1);
@@ -62,7 +62,7 @@ public class CalculatorActivity extends AppCompatActivity {
             }
         });
 
-        // Percentage button
+        
         findViewById(R.id.button_percent).setOnClickListener(v -> {
             if (!currentExpression.isEmpty() && !lastInputIsOperator) {
                 try {
@@ -76,7 +76,7 @@ public class CalculatorActivity extends AppCompatActivity {
             }
         });
 
-        // Decimal button
+        
         findViewById(R.id.button_decimal).setOnClickListener(v -> {
             if (!lastInputIsOperator && !currentExpression.endsWith(".")) {
                 currentExpression += ".";
@@ -84,7 +84,7 @@ public class CalculatorActivity extends AppCompatActivity {
             }
         });
 
-        // Equals button
+        
         findViewById(R.id.button_equals).setOnClickListener(v -> {
             if (!currentExpression.isEmpty() && !lastInputIsOperator) {
                 try {
