@@ -1,7 +1,7 @@
 # ShadowFox
 
 ## Overview
-This repository contains implementations for the ShadowFox skill development program. Tasks are categorized by difficulty levels: **Beginner**, **Intermediate**, and **Advanced**.
+This repository contains implementations for the ShadowFox skill development program. Tasks are categorized by difficulty levels: **Beginner** and **Intermediate**.
 
 ---
 
