@@ -23,7 +23,6 @@ public class AuthActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_auth);
 
-        // Initialize UI components
         emailInput = findViewById(R.id.emailInput);
         usernameInput = findViewById(R.id.usernameInput);
         passwordInput = findViewById(R.id.passwordInput);
@@ -49,7 +48,7 @@ public class AuthActivity extends AppCompatActivity {
             SharedPreferences prefs = getSharedPreferences("AuthPrefs", MODE_PRIVATE);
             SharedPreferences.Editor editor = prefs.edit();
 
-            // Validation
+            
             if (email.isEmpty() || password.isEmpty() || (isSignUpMode && username.isEmpty())) {
                 errorText.setText(getString(R.string.error_fill_all_fields));
                 return;
@@ -71,7 +70,7 @@ public class AuthActivity extends AppCompatActivity {
                     return;
                 }
 
-                // Store credentials
+                
                 editor.putString("email", email);
                 editor.putString("username", username);
                 editor.putString("password", password);
@@ -79,7 +78,7 @@ public class AuthActivity extends AppCompatActivity {
 
                 Toast.makeText(this, "Signed up successfully!", Toast.LENGTH_SHORT).show();
             } else {
-                // Retrieve credentials
+                
                 String savedEmail = prefs.getString("email", null);
                 String savedPassword = prefs.getString("password", null);
                 String savedUsername = prefs.getString("username", null);
@@ -99,7 +98,7 @@ public class AuthActivity extends AppCompatActivity {
             }
 
             errorText.setText("");
-            // Redirect to WelcomeActivity
+            
             Intent intent = new Intent(AuthActivity.this, WelcomeActivity.class);
             intent.putExtra("username", username);
             startActivity(intent);
