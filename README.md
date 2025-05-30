@@ -29,7 +29,7 @@ This repository contains implementations for the ShadowFox skill development pro
 - **Description**: A task management app that allows users to manage their daily tasks with sorting based on priority.
 - **Features**:
   - Add, delete, and mark tasks as complete.
-  - Priority sorting to organize tasks by importance.
+  - Priority sorting to organize tasks by due date.
   - Efficient task rendering using `RecyclerView`.
 
 ---
