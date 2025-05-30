@@ -35,7 +35,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
         public TaskViewHolder(View view) {
             super(view);
             title = view.findViewById(R.id.task_title);
-            dueDateText = view.findViewById(R.id.task_due_date); // add this TextView to your layout
+            dueDateText = view.findViewById(R.id.task_due_date); 
             checkBox = view.findViewById(R.id.task_checkbox);
             deleteButton = view.findViewById(R.id.delete_button);
         }
@@ -53,7 +53,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
         Task task = taskList.get(position);
         holder.title.setText(task.getTitle());
 
-        // Display due date in yyyy-MM-dd format
+        
         holder.dueDateText.setText(task.getDueDate().toString());
 
         holder.checkBox.setOnCheckedChangeListener(null);
@@ -77,7 +77,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
     }
 
     public void addTask(Task task) {
-        // Insert in the correct position based on dueDate
+        
         int insertIndex = 0;
         for (int i = 0; i < taskList.size(); i++) {
             if (task.getDueDate().isBefore(taskList.get(i).getDueDate())) {
