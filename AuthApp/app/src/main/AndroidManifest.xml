@@ -10,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AuthApp">
 
-        <!-- Auth Activity (Main Entry) -->
         <activity
             android:name=".AuthActivity"
             android:exported="true">
@@ -20,7 +19,6 @@
             </intent-filter>
         </activity>
 
-        <!-- Add this block for WelcomeActivity -->
         <activity
             android:name=".WelcomeActivity"
             android:exported="false" />
