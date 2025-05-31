@@ -1,43 +1,65 @@
-# ShadowFox
+#  ShadowFox
 
-## Overview
-This repository contains implementations for the ShadowFox skill development program. Tasks are categorized by difficulty levels: **Beginner** and **Intermediate**.
+## 📂 Repository Overview
+
+This repository contains a collection of Android projects developed as part of the **ShadowFox Skill Development Program**.
+
+Projects are organized by difficulty level:
+
+- 🟢 **Beginner** – Foundational apps to build core Android skills.
+- 🟡 **Intermediate** – Projects involving deeper concepts and more complex UI/UX patterns.
 
 ---
 
-## 🟢 Beginner Level 
+## 🟢 Beginner Level
 
-### 1. Simple Login Page(AuthApp)
-- **Description**: A basic login interface with username and password input fields.
-- **Features**:
-  - Form validation for empty input fields.
-  - Error messages for invalid submissions.
-  - Redirects to a welcome page upon successful login.
+### 1. AuthApp - Simple Login Page
+> A lightweight login interface to learn basic authentication flow.
+
+**Features:**
+- Input validation for both **username** and **password** fields.
+- Display of error messages for empty or incorrect inputs.
+- Redirects user to a **Welcome screen** upon valid login credentials.
+
+---
 
 ### 2. Basic Calculator App
-- **Description**: A simple calculator app for performing basic arithmetic operations.
-- **Features**:
-  - Intuitive user interface.
-  - Supports addition, subtraction, multiplication, and division.
-  - Clear display of input and results.
+> A minimalistic calculator to perform standard math operations.
+
+**Features:**
+- Clean and intuitive **user interface**.
+- Supports:
+  - ➕ Addition
+  - ➖ Subtraction
+  - ✖️ Multiplication
+  - ➗ Division
+- Instant input evaluation with clear display of results.
 
 ---
 
 ## 🟡 Intermediate Level
 
 ### To-Do List App
-- **Description**: A task management app that allows users to manage their daily tasks with sorting based on priority.
-- **Features**:
-  - Add, delete, and mark tasks as complete.
-  - Priority sorting to organize tasks by due date.
-  - Efficient task rendering using `RecyclerView`.
+> A robust task manager for organizing and prioritizing daily activities.
+
+**Features:**
+- Create, edit, delete tasks.
+- Mark tasks as **completed**.
+- Automatically sorted by **priority** using due date.
+- Built with **RecyclerView** for smooth and efficient list rendering.
 
 ---
 
 ## 🛠 Tech Stack
 
-- **Language**: Java   
-- **Platform**: Android 
-- **UI**: XML, Material Design Components  
-- **Tools**: Android Studio, Gradle
+| Category   | Technology                     |
+|------------|--------------------------------|
+| Language   | Java                           |
+| Platform   | Android                        |
+| UI Design  | XML, Material Design Components|
+| IDE/Build  | Android Studio, Gradle         |
+
+---
+
+> 📌 **Note**: Each module is designed for hands-on practice and real-world Android development exposure. Check individual folders for task-specific documentation and implementation details.
 
